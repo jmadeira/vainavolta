@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="pt">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Vai na Volta — Logística</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script defer src="i18n.js"></script>
+    <script defer src="app.js"></script>
+  </head>
+
+  <body>
+    <div class="bg-grid" aria-hidden="true">
+      <span class="line blue h h1"></span><span class="line blue h h2"></span><span class="line blue v v1"></span>
+      <span class="line yellow h h3"></span><span class="line yellow v v2"></span>
+      <span class="line green h h4"></span><span class="line green v v3"></span>
+      <span class="line terracotta h h5"></span><span class="line terracotta v v4"></span>
+    </div>
+
+    <header class="topbar">
+      <div class="wrap topbar-inner">
+        <a class="brand" href="index.html">Vai na Volta</a>
+
+        <nav class="nav">
+          <a href="index.html" data-i18n="nav.home">Início</a>
+          <a href="experience.html" data-i18n="nav.experience">Experiência</a>
+          <a href="program.html" data-i18n="nav.program">Programa</a>
+          <a href="regions.html" data-i18n="nav.regions">Regiões</a>
+          <a href="matrix.html" data-i18n="nav.matrix">Matrix</a>
+          <a href="logistics.html" aria-current="page" data-i18n="nav.logistics">Logística</a>
+        </nav>
+
+        <div class="right">
+          <button class="lang" type="button" data-lang-toggle aria-label="Toggle language">
+            <span class="lang-pill" data-i18n="lang.pt">PT</span><span class="lang-sep">/</span><span class="lang-pill" data-i18n="lang.en">EN</span>
+          </button>
+          <a class="cta" href="program.html#participar" data-i18n="nav.participate">Participar</a>
+        </div>
+      </div>
+    </header>
+
+    <main class="wrap">
+      <section class="section">
+        <div class="logi">
+          <div class="logi-left frame-blue">
+            <div class="plan" aria-hidden="true">
+              <div class="plan-frame">
+                <div class="plan-knot"></div>
+              </div>
+              <div class="plan-bars">
+                <span class="bar b1"></span><span class="bar b2"></span><span class="bar b3"></span>
+                <span class="bar b4"></span><span class="bar b5"></span><span class="bar b6"></span>
+              </div>
+            </div>
+
+            <div class="mini-note frame-yellow soft">
+              <h3 data-i18n="logistics.leftTitle">Coordenação</h3>
+              <p data-i18n="logistics.leftBody">
+                Informação para logística do evento e coordenação de parcerias.
+              </p>
+            </div>
+          </div>
+
+          <div class="logi-right frame-terracotta">
+            <h1 data-i18n="logistics.title">Event logistics and partnership coordination.</h1>
+
+            <dl class="facts">
+              <div class="fact">
+                <dt data-i18n="logistics.dateLabel">Date</dt>
+                <dd>16 May 2026</dd>
+              </div>
+
+              <div class="fact">
+                <dt data-i18n="logistics.timeLabel">Time</dt>
+                <dd>15:00 — 19:00</dd>
+              </div>
+
+              <div class="fact">
+                <dt data-i18n="logistics.locationLabel">Location</dt>
+                <dd data-i18n="logistics.locationValue">Recinto do Mercado de Carcavelos</dd>
+              </div>
+            </dl>
+
+            <div class="contact frame-blue soft">
+              <div class="contact-title" data-i18n="logistics.contactTitle">Enquiries & Partnership</div>
+              <a class="email" href="mailto:evento@vainavolta.site">evento@vainavolta.site</a>
+            </div>
+
+            <p class="copyright">
+              © 2026 Vai na Volta. <span data-i18n="logistics.rights">Todos os direitos reservados.</span>
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <footer class="footer frame-blue">
+        <p><strong>Vai na Volta</strong> — Carcavelos • 16 May 2026</p>
+        <p class="muted" data-i18n="footer.note">Site estático (HTML/CSS/JS). Posso adaptar para GitHub Pages.</p>
+      </footer>
+    </main>
+  </body>
+</html>

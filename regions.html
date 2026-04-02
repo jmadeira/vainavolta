@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="pt">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Vai na Volta — Regiões</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script defer src="i18n.js"></script>
+    <script defer src="app.js"></script>
+  </head>
+
+  <body>
+    <div class="bg-grid" aria-hidden="true">
+      <span class="line blue h h1"></span>
+      <span class="line blue h h2"></span>
+      <span class="line blue v v1"></span>
+      <span class="line yellow h h3"></span>
+      <span class="line yellow v v2"></span>
+      <span class="line green h h4"></span>
+      <span class="line green v v3"></span>
+      <span class="line terracotta h h5"></span>
+      <span class="line terracotta v v4"></span>
+    </div>
+
+    <header class="topbar">
+      <div class="wrap topbar-inner">
+        <a class="brand" href="index.html">Vai na Volta</a>
+
+        <nav class="nav">
+          <a href="index.html" data-i18n="nav.home">Início</a>
+          <a href="experience.html" data-i18n="nav.experience">Experiência</a>
+          <a href="program.html" data-i18n="nav.program">Programa</a>
+          <a href="regions.html" aria-current="page" data-i18n="nav.regions">Regiões</a>
+        </nav>
+
+        <div class="right">
+          <button class="lang" type="button" data-lang-toggle aria-label="Toggle language">
+            <span class="lang-pill" data-i18n="lang.pt">PT</span>
+            <span class="lang-sep">/</span>
+            <span class="lang-pill" data-i18n="lang.en">EN</span>
+          </button>
+          <a class="cta" href="program.html#participar" data-i18n="nav.participate">Participar</a>
+        </div>
+      </div>
+    </header>
+
+    <main class="wrap">
+      <section class="section">
+        <div class="section-head">
+          <h2 data-i18n="regions.title">Four continents converging in one location.</h2>
+          <p data-i18n="regions.body">Sete regiões globais representadas numa tarde única.</p>
+        </div>
+
+        <div class="regions">
+          <article class="region frame-blue">
+            <h3 data-i18n="regions.saTitle">South America</h3>
+            <p data-i18n="regions.saBody">Brazil, Colombia, Ecuador, Panama</p>
+          </article>
+
+          <article class="region frame-terracotta">
+            <h3 data-i18n="regions.afTitle">Africa</h3>
+            <p data-i18n="regions.afBody">Guinea-Bissau</p>
+          </article>
+
+          <article class="region frame-green">
+            <h3 data-i18n="regions.asTitle">Asia</h3>
+            <p data-i18n="regions.asBody">India, Macau</p>
+          </article>
+
+          <article class="region frame-yellow">
+            <h3 data-i18n="regions.euTitle">Europe</h3>
+            <p data-i18n="regions.euBody">Spain (Sevillanas) & Portugal (Host)</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="section-head">
+          <h2 data-i18n="regions.noteTitle">Detalhes por banca</h2>
+          <p data-i18n="regions.noteBody">Podemos preencher esta secção quando tiveres a lista final de participantes.</p>
+        </div>
+
+        <div class="cards">
+          <article class="card frame-green">
+            <h3 data-i18n="regions.placeholder1Title">Bancas</h3>
+            <p data-i18n="regions.placeholder1Body">Descrição curta de cada região, gastronomia e atividades.</p>
+          </article>
+          <article class="card frame-blue">
+            <h3 data-i18n="regions.placeholder2Title">Workshops</h3>
+            <p data-i18n="regions.placeholder2Body">Oficinas e masterclasses associadas a cada cultura.</p>
+          </article>
+          <article class="card frame-yellow">
+            <h3 data-i18n="regions.placeholder3Title">Sabores</h3>
+            <p data-i18n="regions.placeholder3Body">Provas e pratos típicos (com opções vegetarianas).</p>
+          </article>
+          <article class="card frame-terracotta">
+            <h3 data-i18n="regions.placeholder4Title">Ritmos</h3>
+            <p data-i18n="regions.placeholder4Body">Música e dança em sessões curtas ao longo do dia.</p>
+          </article>
+        </div>
+      </section>
+
+      <footer class="footer frame-blue">
+        <p><strong>Vai na Volta</strong> — Carcavelos • 16 May 2026</p>
+        <p class="muted" data-i18n="footer.note">Site estático (HTML/CSS/JS). Posso adaptar para GitHub Pages.</p>
+      </footer>
+    </main>
+  </body>
+</html>
