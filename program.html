@@ -3,48 +3,46 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title data-lang-key="program.metaTitle"></title>
-    <meta name="description" content="" data-lang-key="program.metaDesc">
+    <title>Program</title>
+    <script defer src="i18n.js"></script>
+    <script defer src="app.js"></script>
     <link rel="stylesheet" href="styles.css">
-    <script src="i18n.js" defer></script>
-    <script src="app.js" defer></script>
 </head>
-<body data-meta-title="" data-lang-toggle>
+<body data-meta-title="program.metaTitle" data-meta-desc="program.metaDesc">
+    <nav class="topbar">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="experience.html">Experience</a></li>
+            <li><a href="program.html">Program</a></li>
+            <li><a href="regions.html">Regions</a></li>
+            <li><a href="matrix.html">Matrix</a></li>
+            <li><a href="logistics.html">Logistics</a></li>
+            <li><button data-lang-toggle>Toggle Language</button></li>
+        </ul>
+    </nav>
+    <a href="#participar" class="skip-link" data-i18n="a11y.skip">Skip to content</a>
+
     <div class="bg-grid">
-        <header class="topbar">
-            <nav>
-                <ul>
-                    <li data-lang-key="nav.home"></li>
-                    <li data-lang-key="nav.about"></li>
-                    <li data-lang-key="nav.program"></li>
-                    <li data-lang-key="nav.contact"></li>
-                </ul>
-            </nav>
-            <button data-lang-toggle></button>
-        </header>
-        <main>
-            <h1 data-lang-key="program.title"></h1>
-            <section>
-                <p data-lang-key="program.body"></p>
-            </section>
-            <section>
-                <h2 data-lang-key="program.t1500"></h2>
-                <p data-lang-key="activations.title"></p>
-                <p data-lang-key="activations.body"></p>
-                <h3 data-lang-key="activations.culinaryTitle"></h3>
-                <p data-lang-key="activations.culinaryBody"></p>
-                <h3 data-lang-key="activations.craftTitle"></h3>
-                <p data-lang-key="activations.craftBody"></p>
-                <h3 data-lang-key="activations.moveTitle"></h3>
-                <p data-lang-key="activations.moveBody"></p>
-            </section>
-            <footer class="frame-blue">
-                <p data-lang-key="footer.note"></p>
-                <h4 data-lang-key="footer.quickTitle"></h4>
-                <p data-lang-key="footer.date" data-lang-key="footer.time" data-lang-key="footer.location" data-lang-key="footer.contact"></p>
-                <p data-lang-key="footer.rights"></p>
-            </footer>
-        </main>
+        <h1 data-i18n="program.title">Program</h1>
+        <p data-i18n="program.description">Details about the program will go here.</p>
+        <section data-i18n="activations.section">
+            <h2 data-i18n="activations.title">Activations</h2>
+            <!-- Content about activations -->
+        </section>
+        <section data-i18n="flow.section">
+            <h2 data-i18n="flow.title">Flow</h2>
+            <!-- Content about flow -->
+        </section>
     </div>
+
+    <footer>
+        <p data-i18n="footer.contact">Contact us at...</p>
+        <nav>
+            <ul>
+                <li><a href="privacy.html" data-i18n="footer.privacy">Privacy Policy</a></li>
+                <li><a href="terms.html" data-i18n="footer.terms">Terms of Service</a></li>
+            </ul>
+        </nav>
+    </footer>
 </body>
 </html>
