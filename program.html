@@ -1,13 +1,62 @@
 <!DOCTYPE html>
-<html lang="pt">
+<html lang="pt" data-lang-toggle >
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Programa</title>
+    <title data-i18n="program.metaTitle">Program</title>
+    <meta name="description" data-i18n="program.metaDesc">
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="i18n.js"></script>
+    <script defer src="app.js"></script>
 </head>
-<body>
-    <h1>{$i18n.program.title}</h1>
-    <p>{$i18n.program.ticketText}</p>
-    <!-- Other contents -->
+<body data-meta-title="program.metaTitle" data-meta-desc="program.metaDesc">
+    <a href="#main-content" class="skip-link" data-i18n="a11y.skip">Skip to content</a>
+    <header class="topbar">
+        <nav>
+            <!-- nav links -->
+        </nav>
+    </header>
+    <div class="bg-grid">
+        <main id="main-content">
+            <section class="program-schedule">
+                <h1 data-i18n="program.title">Program Schedule</h1>
+                <div data-i18n="program.body">
+                    <!-- Program Body Content Here -->
+                </div>
+                <h2 data-i18n="program.t1500">15:00 - Activity Title</h2>
+                <div data-i18n="program.t1500.body">
+                    <!-- Activity Content Here -->
+                </div>
+                <h2 data-i18n="program.t1900">19:00 - Activity Title</h2>
+                <div data-i18n="program.t1900.body">
+                    <!-- Activity Content Here -->
+                </div>
+            </section>
+            <section class="continuous-activations">
+                <h2 data-i18n="activations.title">Continuous Activations</h2>
+                <div data-i18n="activations.body">
+                    <!-- Activations Body Content Here -->
+                </div>
+                <div data-i18n="flow.title">Main Stage Flow</div>
+                <div data-i18n="flow.body">
+                    <!-- Flow Body Content Here -->
+                </div>
+                <div data-i18n="flow.other_key">Additional Flow Content Here</div>
+            </section>
+            <section id="participar" class="join-participar">
+                <h2 data-i18n="program.joinTitle">Join</h2>
+                <div data-i18n="program.body">
+                    <!-- Join Body Content Here -->
+                </div>
+                <div class="card" data-i18n="program.card1Title">Card 1 Content</div>
+                <div class="card" data-i18n="program.card2Title">Card 2 Content</div>
+                <div class="card" data-i18n="program.card3Title">Card 3 Content</div>
+                <div class="card" data-i18n="program.card4Title">Card 4 Content</div>
+            </section>
+        </main>
+    </div>
+    <footer class="frame-blue">
+        <!-- Footer Content Here -->
+    </footer>
 </body>
 </html>
