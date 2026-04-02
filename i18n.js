@@ -1,8 +1,12 @@
-// Restored VNV_I18N implementation with updated text
 const program = {
-  joinBody: 'Entrada livre.',
-  card1Body: 'Free entry.',
-  // ... other properties
+    card1Body: {
+        pt: "Entrada livre.",
+        en: "Free entry."
+    },
+    joinBody: {
+        pt: "", // Removed Brevemente/Coming soon mention
+        en: "" // Removed Brevemente/Coming soon mention
+    }
 };
 
 export default program;
