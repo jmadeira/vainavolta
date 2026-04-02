@@ -1,34 +1,143 @@
-<!DOCTYPE html>
-<html lang="en" data-meta-title="program.metaTitle" data-meta-desc="program.metaDesc">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title data-i18n="program.metaTitle"></title>
-    <link rel="stylesheet" href="styles.css">
-    <script src="i18n.js" defer></script>
-    <script src="app.js" defer></script>
-</head>
-<body>
-    <header>
-        <nav>
-            <ul>
-                <li data-i18n="common.home"></li>
-                <li data-i18n="nav.program"></li>
-                <li data-i18n="nav.about"></li>
-                <li data-i18n="nav.contact"></li>
-            </ul>
+<!doctype html>
+<html lang="pt">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <link rel="stylesheet" href="styles.css" />
+    <script defer src="i18n.js"></script>
+    <script defer src="app.js"></script>
+  </head>
+
+  <body data-meta-title="program.metaTitle" data-meta-desc="program.metaDesc">
+    <a class="skip" href="#conteudo" data-i18n="a11y.skip">Saltar para o conteúdo</a>
+
+    <div class="bg-grid" aria-hidden="true">
+      <span class="line blue h h1"></span><span class="line blue h h2"></span><span class="line blue v v1"></span>
+      <span class="line yellow h h3"></span><span class="line yellow v v2"></span>
+      <span class="line green h h4"></span><span class="line green v v3"></span>
+      <span class="line terracotta h h5"></span><span class="line terracotta v v4"></span>
+    </div>
+
+    <header class="topbar">
+      <div class="wrap topbar-inner">
+        <a class="brand" href="index.html">Vai na Volta</a>
+
+        <nav class="nav">
+          <a href="index.html" data-i18n="nav.home">Início</a>
+          <a href="experience.html" data-i18n="nav.experience">Experiência</a>
+          <a href="program.html" aria-current="page" data-i18n="nav.program">Programa</a>
+          <a href="regions.html" data-i18n="nav.regions">Regiões</a>
+          <a href="matrix.html" data-i18n="nav.matrix">Matrix</a>
+          <a href="logistics.html" data-i18n="nav.logistics">Logística</a>
         </nav>
+
+        <div class="right">
+          <button class="lang" type="button" data-lang-toggle aria-label="Toggle language">
+            <span class="lang-pill" data-i18n="lang.pt">PT</span><span class="lang-sep">/</span><span class="lang-pill" data-i18n="lang.en">EN</span>
+          </button>
+          <a class="cta" href="program.html#participar" data-i18n="nav.participate">Participar</a>
+        </div>
+      </div>
     </header>
-    <main>
-        <section>
-            <h1 data-i18n="program.title"></h1>
-            <div data-i18n="program.content"></div>
-            <div data-i18n="activations.specialEvent"></div>
-        </section>
+
+    <main id="conteudo" class="wrap">
+      <section class="section">
+        <div class="section-head">
+          <h1 data-i18n="program.title">Programa</h1>
+          <p data-i18n="program.body">Estrutura base para orientar a tarde (ajustável com o alinhamento final).</p>
+        </div>
+
+        <div class="panel frame-blue schedule">
+          <div class="row"><div class="time">15:00</div><div class="desc" data-i18n="program.t1500">Abertura + boas‑vindas (palco)</div></div>
+          <div class="row"><div class="time">15:15</div><div class="desc" data-i18n="program.t1515">Bancas abertas + primeiras provas/workshops</div></div>
+          <div class="row"><div class="time">16:30</div><div class="desc" data-i18n="program.t1630">Momento cultural (palco)</div></div>
+          <div class="row"><div class="time">17:00</div><div class="desc" data-i18n="program.t1700">Exploração livre + masterclasses</div></div>
+          <div class="row"><div class="time">18:30</div><div class="desc" data-i18n="program.t1830">Encerramento (palco) + convite para próxima edição</div></div>
+          <div class="row"><div class="time">19:00</div><div class="desc" data-i18n="program.t1900">Fim</div></div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="section-head">
+          <h2 data-i18n="activations.title">Ativações culturais contínuas (15:00–19:00)</h2>
+          <p data-i18n="activations.body">Três eixos nas bancas que acontecem em paralelo ao longo da tarde.</p>
+        </div>
+
+        <div class="cards tri-activations">
+          <article class="card frame-terracotta">
+            <h3 data-i18n="activations.culinaryTitle">Troca Gastronómica</h3>
+            <ul>
+              <li><strong data-i18n="activations.gb">Guiné-Bissau</strong> — <span data-i18n="activations.gbFood">Banca de comida tradicional.</span></li>
+              <li><strong data-i18n="activations.macau">Macau</strong> — <span data-i18n="activations.macauFood">Integração gastronómica.</span></li>
+              <li><strong data-i18n="activations.ep">Equador &amp; Panamá</strong> — <span data-i18n="activations.epFood">Showcooking ao vivo.</span></li>
+            </ul>
+          </article>
+
+          <article class="card frame-yellow">
+            <h3 data-i18n="activations.craftTitle">Artes, Ofícios &amp; Literatura</h3>
+            <ul>
+              <li><strong data-i18n="activations.brazil">Brasil</strong> — <span data-i18n="activations.brazilCraft">Exposição cultural.</span></li>
+              <li><strong data-i18n="activations.macau">Macau</strong> — <span data-i18n="activations.macauLit">Mostra literária.</span></li>
+              <li><strong data-i18n="activations.ep">Equador &amp; Panamá</strong> — <span data-i18n="activations.epCraft">Artesanato tradicional.</span></li>
+            </ul>
+          </article>
+
+          <article class="card frame-green">
+            <h3 data-i18n="activations.moveTitle">Movimento &amp; Bem‑estar</h3>
+            <ul>
+              <li><strong data-i18n="activations.india">Índia</strong> — <span data-i18n="activations.indiaWell">Exibição de yoga + aula imersiva de 1 hora.</span></li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="section-head">
+          <h2 data-i18n="flow.title">Fluxo de energia do Palco Principal</h2>
+          <p data-i18n="flow.body">Uma narrativa em 4 momentos para orientar a experiência coletiva.</p>
+        </div>
+
+        <div class="cards flow">
+          <article class="card frame-blue"><h3 data-i18n="flow.iTitle">Iniciação</h3><p data-i18n="flow.iBody">Cerimónia de abertura do evento.</p></article>
+          <article class="card frame-terracotta"><h3 data-i18n="flow.pTitle">Pico de Ativação</h3><p data-i18n="flow.pBody">Samba (Brasil), Zumba (Colômbia), Sevillanas (Espanha) e outras danças dinâmicas.</p></article>
+          <article class="card frame-green"><h3 data-i18n="flow.gTitle">Enraizamento</h3><p data-i18n="flow.gBody">Transição coletiva para mindfulness com Yoga no palco (Índia).</p></article>
+          <article class="card frame-yellow"><h3 data-i18n="flow.sTitle">Síntese</h3><p data-i18n="flow.sBody">Cerimónia oficial de encerramento.</p></article>
+        </div>
+      </section>
+
+      <section id="participar" class="section">
+        <div class="section-head">
+          <h2 data-i18n="program.joinTitle">Participar</h2>
+          <p data-i18n="program.joinBody">Junte-se a nós para uma experiência única. Sem custo. Sem compromisso.</p>
+        </div>
+
+        <div class="cards">
+          <article class="card frame-blue"><h3 data-i18n="program.card1Title">Bilhetes</h3><p data-i18n="program.card1Body">Entrada livre.</p></article>
+          <article class="card frame-terracotta"><h3 data-i18n="program.card2Title">Local</h3><p data-i18n="program.card2Body">Recinto do Mercado de Carcavelos.</p></article>
+          <article class="card frame-green"><h3 data-i18n="program.card3Title">Contacto</h3><p><a class="email" href="mailto:evento@vainavolta.site" data-i18n="program.card3Body">evento@vainavolta.site</a></p></article>
+          <article class="card frame-yellow"><h3 data-i18n="program.card4Title">FAQ</h3><p data-i18n="program.card4Body">Acessibilidade, opções alimentares, horários, etc.</p></article>
+        </div>
+      </section>
+
+      <footer class="footer frame-blue">
+        <div class="footer-grid">
+          <div>
+            <div class="footer-title" data-i18n="footer.quickTitle">Informações rápidas</div>
+            <div class="footer-facts">
+              <div><span data-i18n="footer.date">Data</span>: <strong data-i18n="common.dateShort">16 MAI 2026</strong></div>
+              <div><span data-i18n="footer.time">Hora</span>: <strong data-i18n="common.timeShort">15:00 — 19:00</strong></div>
+              <div><span data-i18n="footer.location">Local</span>: <strong data-i18n="common.venueShort">Recinto do Mercado de Carcavelos</strong></div>
+            </div>
+          </div>
+          <div>
+            <div class="footer-title" data-i18n="common.emailLabel">Contactos &amp; Parcerias</div>
+            <a class="email" href="mailto:evento@vainavolta.site" data-i18n="common.email">evento@vainavolta.site</a>
+            <p class="muted" data-i18n="footer.note">Site estático (HTML/CSS/JS). Pronto para GitHub Pages.</p>
+          </div>
+        </div>
+
+        <p class="copyright" data-i18n="footer.rights">© 2026 Vai na Volta. Todos os direitos reservados.</p>
+      </footer>
     </main>
-    <footer>
-        <p data-i18n="footer.terms"></p>
-        <p data-i18n="footer.privacy"></p>
-    </footer>
-</body>
+  </body>
 </html>
