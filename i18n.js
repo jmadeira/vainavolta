@@ -1,12 +1,14 @@
+// i18n.js content goes here with the required changes
+
 const program = {
-    card1Body: {
-        pt: "Entrada livre.",
-        en: "Free entry."
-    },
-    joinBody: {
-        pt: "", // Removed Brevemente/Coming soon mention
-        en: "" // Removed Brevemente/Coming soon mention
-    }
+  card1Body: {
+    pt: 'Entrada livre.',
+    en: 'Free entry.',
+  },
+  joinBody: {
+    pt: 'Continue acompanhando para mais informações.',
+    en: 'Stay tuned for more information.',
+  },
 };
 
-export default program;
+window.VNV_I18N = program;
