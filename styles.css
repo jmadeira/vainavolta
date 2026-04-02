@@ -1,108 +1,93 @@
-/* Base Paper Background */
-body {
-    background-color: #f5f5f5;
-    color: #333;
+.bg-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 1rem;
 }
 
-/* Metro Lines Background Grid */
-.grid {
-    background-image: url('metro-lines.png');
-    background-repeat: repeat;
+:root {
+  --primary-color: #3498db;
+  --secondary-color: #2ecc71;
+  --accent-color: #e74c3c;
+  --text-color: #333;
 }
 
-/* Topbar/Nav/Right Controls */
-.topbar {
-    background-color: #0078d4;
-    padding: 10px;
+.wrap {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1rem;
 }
+
+.topbar-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.brand {
+  font-size: 1.5rem;
+  color: var(--primary-color);
+}
+
 .nav {
-    display: flex;
-    justify-content: space-between;
-}
-.controls {
-    float: right;
+  display: flex;
+  gap: 1rem;
 }
 
-/* Hero */
-.hero {
-    background-image: url('hero-image.jpg');
-    height: 400px;
-    background-size: cover;
+.cta {
+  background-color: var(--secondary-color);
+  padding: 0.5rem 1rem;
+  border: none;
+  color: white;
+  cursor: pointer;
 }
 
-/* Cards */
-.card {
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    padding: 15px;
-    margin: 10px;
+.lang {
+  margin-left: 1rem;
 }
 
-/* Panels */
-.panel {
-    background-color: #fff;
-    border: 1px solid #ddd;
-    margin: 15px;
+.hero-panel {
+  background-color: var(--accent-color);
+  color: white;
+  padding: 2rem;
+  text-align: center;
 }
 
-/* Dual Architecture */
-.architecture {
-    display: flex;
+button {
+  background-color: var(--primary-color);
+  border: none;
+  color: white;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
 }
 
-/* Regions Grid */
-.regions {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
+.section-layout {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
 }
 
-/* Schedule */
-.schedule {
-    margin: 20px 0;
+.schedule-rows {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
 }
 
-/* Tri Activations */
-.tri-activations {
-    display: flex;
-    justify-content: space-around;
+.footer-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  padding: 2rem;
 }
 
-/* Flow */
-.flow {
-    display: block;
-    margin: 10px;
-}
-
-/* Matrix Grid */
-.matrix {
-    display: grid;
-    grid-template-areas:
-        'a b c'
-        'd e f';
-}
-
-/* Sensory Section */
-.sensory {
-    padding: 20px;
-    background-color: #f0f0f0;
-}
-
-/* Logistics Page */
-.logistics {
-    max-width: 1200px;
-    margin: auto;
-}
-
-/* Skip Link */
 .skip-link {
-    position: absolute;
-    top: -40px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: white;
+  z-index: 100;
+  padding: 0.5rem;
+  border: 1px solid var(--primary-color);
 }
 
-/* Professional Footer Styles */
-.footer {
-    text-align: center;
-    padding: 20px;
-    background-color: #333;
-    color: #fff;
+.skip-link:focus {
+  outline: 2px dashed var(--primary-color);
 }
