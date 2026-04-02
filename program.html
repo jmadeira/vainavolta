@@ -1,62 +1,50 @@
 <!DOCTYPE html>
-<html lang="pt" data-lang-toggle >
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title data-i18n="program.metaTitle">Program</title>
-    <meta name="description" data-i18n="program.metaDesc">
+    <title data-lang-key="program.metaTitle"></title>
+    <meta name="description" content="" data-lang-key="program.metaDesc">
     <link rel="stylesheet" href="styles.css">
-    <script defer src="i18n.js"></script>
-    <script defer src="app.js"></script>
+    <script src="i18n.js" defer></script>
+    <script src="app.js" defer></script>
 </head>
-<body data-meta-title="program.metaTitle" data-meta-desc="program.metaDesc">
-    <a href="#main-content" class="skip-link" data-i18n="a11y.skip">Skip to content</a>
-    <header class="topbar">
-        <nav>
-            <!-- nav links -->
-        </nav>
-    </header>
+<body data-meta-title="" data-lang-toggle>
     <div class="bg-grid">
-        <main id="main-content">
-            <section class="program-schedule">
-                <h1 data-i18n="program.title">Program Schedule</h1>
-                <div data-i18n="program.body">
-                    <!-- Program Body Content Here -->
-                </div>
-                <h2 data-i18n="program.t1500">15:00 - Activity Title</h2>
-                <div data-i18n="program.t1500.body">
-                    <!-- Activity Content Here -->
-                </div>
-                <h2 data-i18n="program.t1900">19:00 - Activity Title</h2>
-                <div data-i18n="program.t1900.body">
-                    <!-- Activity Content Here -->
-                </div>
+        <header class="topbar">
+            <nav>
+                <ul>
+                    <li data-lang-key="nav.home"></li>
+                    <li data-lang-key="nav.about"></li>
+                    <li data-lang-key="nav.program"></li>
+                    <li data-lang-key="nav.contact"></li>
+                </ul>
+            </nav>
+            <button data-lang-toggle></button>
+        </header>
+        <main>
+            <h1 data-lang-key="program.title"></h1>
+            <section>
+                <p data-lang-key="program.body"></p>
             </section>
-            <section class="continuous-activations">
-                <h2 data-i18n="activations.title">Continuous Activations</h2>
-                <div data-i18n="activations.body">
-                    <!-- Activations Body Content Here -->
-                </div>
-                <div data-i18n="flow.title">Main Stage Flow</div>
-                <div data-i18n="flow.body">
-                    <!-- Flow Body Content Here -->
-                </div>
-                <div data-i18n="flow.other_key">Additional Flow Content Here</div>
+            <section>
+                <h2 data-lang-key="program.t1500"></h2>
+                <p data-lang-key="activations.title"></p>
+                <p data-lang-key="activations.body"></p>
+                <h3 data-lang-key="activations.culinaryTitle"></h3>
+                <p data-lang-key="activations.culinaryBody"></p>
+                <h3 data-lang-key="activations.craftTitle"></h3>
+                <p data-lang-key="activations.craftBody"></p>
+                <h3 data-lang-key="activations.moveTitle"></h3>
+                <p data-lang-key="activations.moveBody"></p>
             </section>
-            <section id="participar" class="join-participar">
-                <h2 data-i18n="program.joinTitle">Join</h2>
-                <div data-i18n="program.body">
-                    <!-- Join Body Content Here -->
-                </div>
-                <div class="card" data-i18n="program.card1Title">Card 1 Content</div>
-                <div class="card" data-i18n="program.card2Title">Card 2 Content</div>
-                <div class="card" data-i18n="program.card3Title">Card 3 Content</div>
-                <div class="card" data-i18n="program.card4Title">Card 4 Content</div>
-            </section>
+            <footer class="frame-blue">
+                <p data-lang-key="footer.note"></p>
+                <h4 data-lang-key="footer.quickTitle"></h4>
+                <p data-lang-key="footer.date" data-lang-key="footer.time" data-lang-key="footer.location" data-lang-key="footer.contact"></p>
+                <p data-lang-key="footer.rights"></p>
+            </footer>
         </main>
     </div>
-    <footer class="frame-blue">
-        <!-- Footer Content Here -->
-    </footer>
 </body>
 </html>
