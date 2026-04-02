@@ -1,48 +1,34 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-meta-title="program.metaTitle" data-meta-desc="program.metaDesc">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Program</title>
-    <script defer src="i18n.js"></script>
-    <script defer src="app.js"></script>
+    <title data-i18n="program.metaTitle"></title>
     <link rel="stylesheet" href="styles.css">
+    <script src="i18n.js" defer></script>
+    <script src="app.js" defer></script>
 </head>
-<body data-meta-title="program.metaTitle" data-meta-desc="program.metaDesc">
-    <nav class="topbar">
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="experience.html">Experience</a></li>
-            <li><a href="program.html">Program</a></li>
-            <li><a href="regions.html">Regions</a></li>
-            <li><a href="matrix.html">Matrix</a></li>
-            <li><a href="logistics.html">Logistics</a></li>
-            <li><button data-lang-toggle>Toggle Language</button></li>
-        </ul>
-    </nav>
-    <a href="#participar" class="skip-link" data-i18n="a11y.skip">Skip to content</a>
-
-    <div class="bg-grid">
-        <h1 data-i18n="program.title">Program</h1>
-        <p data-i18n="program.description">Details about the program will go here.</p>
-        <section data-i18n="activations.section">
-            <h2 data-i18n="activations.title">Activations</h2>
-            <!-- Content about activations -->
-        </section>
-        <section data-i18n="flow.section">
-            <h2 data-i18n="flow.title">Flow</h2>
-            <!-- Content about flow -->
-        </section>
-    </div>
-
-    <footer>
-        <p data-i18n="footer.contact">Contact us at...</p>
+<body>
+    <header>
         <nav>
             <ul>
-                <li><a href="privacy.html" data-i18n="footer.privacy">Privacy Policy</a></li>
-                <li><a href="terms.html" data-i18n="footer.terms">Terms of Service</a></li>
+                <li data-i18n="common.home"></li>
+                <li data-i18n="nav.program"></li>
+                <li data-i18n="nav.about"></li>
+                <li data-i18n="nav.contact"></li>
             </ul>
         </nav>
+    </header>
+    <main>
+        <section>
+            <h1 data-i18n="program.title"></h1>
+            <div data-i18n="program.content"></div>
+            <div data-i18n="activations.specialEvent"></div>
+        </section>
+    </main>
+    <footer>
+        <p data-i18n="footer.terms"></p>
+        <p data-i18n="footer.privacy"></p>
     </footer>
 </body>
 </html>
