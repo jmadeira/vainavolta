@@ -1,0 +1,108 @@
+/* Base Paper Background */
+body {
+    background-color: #f5f5f5;
+    color: #333;
+}
+
+/* Metro Lines Background Grid */
+.grid {
+    background-image: url('metro-lines.png');
+    background-repeat: repeat;
+}
+
+/* Topbar/Nav/Right Controls */
+.topbar {
+    background-color: #0078d4;
+    padding: 10px;
+}
+.nav {
+    display: flex;
+    justify-content: space-between;
+}
+.controls {
+    float: right;
+}
+
+/* Hero */
+.hero {
+    background-image: url('hero-image.jpg');
+    height: 400px;
+    background-size: cover;
+}
+
+/* Cards */
+.card {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 15px;
+    margin: 10px;
+}
+
+/* Panels */
+.panel {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    margin: 15px;
+}
+
+/* Dual Architecture */
+.architecture {
+    display: flex;
+}
+
+/* Regions Grid */
+.regions {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+/* Schedule */
+.schedule {
+    margin: 20px 0;
+}
+
+/* Tri Activations */
+.tri-activations {
+    display: flex;
+    justify-content: space-around;
+}
+
+/* Flow */
+.flow {
+    display: block;
+    margin: 10px;
+}
+
+/* Matrix Grid */
+.matrix {
+    display: grid;
+    grid-template-areas:
+        'a b c'
+        'd e f';
+}
+
+/* Sensory Section */
+.sensory {
+    padding: 20px;
+    background-color: #f0f0f0;
+}
+
+/* Logistics Page */
+.logistics {
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* Skip Link */
+.skip-link {
+    position: absolute;
+    top: -40px;
+}
+
+/* Professional Footer Styles */
+.footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: #fff;
+}
