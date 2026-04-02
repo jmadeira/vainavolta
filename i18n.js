@@ -1,0 +1,1 @@
+// i18n.js content here. Include core bilingual functionality with data-i18n keys for translations and dynamic meta descriptions. Ensure dynamic fetching based on page context.
